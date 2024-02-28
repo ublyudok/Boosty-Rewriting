@@ -1,0 +1,345 @@
+header {
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+}
+
+.topmenu {
+    padding: 0 15px;
+    display: inline-flex;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.menu_top {
+    height: 40px;
+}
+
+.logo {
+    background-image: url(../images/boosty.png);
+    margin-right: 20px;
+}
+
+.topMenu_left img {
+    width: 145px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.message_top_btn {
+    height: 100%;
+    width: auto;
+    padding: 0 16px;
+    background-color: #fff;
+    border: 0.5px solid #eaeaea;
+    border-radius: 10px;
+}
+
+.message_top_btn a {
+    color: black;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.messIcon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    margin-right: 8px;
+    background-image: url(../images/send_message.png);
+}
+
+.message_top_btn:hover .mess_link {
+    color: #f15f2c;
+    transition: 0.1s;
+}
+
+.message_top_btn:hover .messIcon {
+    background-image: url(../images/messageHover.png);
+    transition: 0.1s;
+}
+
+.signUp {
+    width: 150px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #eaeaea;
+    padding: 10px 20px;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+}
+
+.signUp:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+    border-color: #c1c1c1;
+}
+
+.logIn {
+    width: 150px;
+    height: 100%;
+    background-color: #f15f2c;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.logIn:hover {
+    background-color: #d45124;
+    transition: 0.3s;
+}
+
+.langChooser {
+    margin-left: auto;
+    display: inline-flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.arrow_icon {
+    width: 13.5px;
+    height: 11px;
+    margin: 8.8px 0 6px 9px;
+}
+
+.langValue img {
+    margin-right: -8px;
+    width: 36px;
+    height: 20px;
+    margin-bottom: 2px;
+}
+
+.langs {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px 0;
+    border: 0.5px solid #eaeaea;
+    position: relative;
+    width: auto;
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+}
+
+.lang_grid {
+    display: grid;
+}
+
+.arrow_icon_up {
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+.arrow_icon_down {
+    transform: rotate(360deg);
+    transition: 0.2s;
+}
+
+.ru img {
+    width: 19px;
+    height: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4px;
+}
+
+.lan {
+    padding: 6px 15px;
+    display: inline-flex;
+    font-size: 14px;
+    height: 34px;
+}
+
+.en img {
+    width: 19px;
+    height: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4px;
+}
+
+.profile_btn {
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    display: inline-flex;
+    position: relative;
+    margin-right: 10px;
+}
+
+.arrow_profile img {
+    width: 13.5px;
+    height: 11px;
+}
+
+.arrow_profile {
+    height: 100%;
+    padding-top: 8px;
+    padding-bottom: 14px;
+}
+
+.mini-profile-name {
+    height: 100%;
+    padding: 9px 0 8px 0;
+    font-size: 14px;
+    margin: 0 9px 0 10px;
+}
+
+.mini-profile-name {
+    font-size: 14px;
+}
+
+.avatar-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: cover;
+    background-position: top center;
+    background-size: cover;
+}
+
+.mini_dropdown_menu {
+    width: 218.4px;
+    position: absolute;
+    height: auto;
+    display: none;
+    right: 0px;
+    margin-top: 50px;
+    border: 0.5px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.dropdown_top_block {
+    padding: 6px 0;
+    border-bottom: 0.5px solid #eaeaea;
+}
+
+.items {
+    padding: 0px 15px 0 15px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.log_out_dropdowm {
+    height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 15px;
+    align-items: center;
+    display: flex;
+}
+
+.log_out_drop_down {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/log_out.png);
+    background-size: 18px 18px;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+
+.spans_drop_down {
+    display: inline-flex;
+}
+
+.drop_down_settings {
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/drop_down_settings.png);
+    background-size: 22px 22px;
+    margin-right: 5px;
+}
+
+
+.dropDown_acc_settings:hover .drop_down_settings {
+    background-image: url(../images/hovered_drop_down_settings.png);
+    transition: 0.1s;
+}
+
+.dropDown_acc_settings:hover .settings_span {
+    color: #f15f2c;
+    transition: 0.1s;
+}   
+
+.log_out_dropdowm:hover .log_out_span {
+    color: #f15f2c;
+    transition: 0.1s;
+}
+
+.log_out_dropdowm:hover .log_out_drop_down {
+    background-image: url(../images/hovered_log_out.png);
+    transition: 0.1s;
+}
+
+.subs_drop_down_icon {
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/drop_down_users.png);
+    background-size: 22px 22px;
+    margin-right: 5px;
+}
+
+.drop_down_my_subscribtions:hover .subs_drop_down_icon {
+    background-image: url(../images/hovered_drop_down_users.png);
+    transition: 0.1s;
+}
+
+.drop_down_my_subscribtions:hover .subs_span {
+    color: #f15f2c;
+    transition: 0.1s;
+}
+
+.feed_icon_drop_down {
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/feed_filter_drop_down.png);
+    background-size: 22px 22px;
+    margin-right: 5px;
+}
+
+.dropDown_item_feed:hover .feed_icon_drop_down {
+    background-image: url(../images/drop_down_feed.png);
+    transition: 0.1s;
+}
+
+.dropDown_item_feed:hover .feed_span {
+    color: #f15f2c;
+    transition: 0.1s;
+}
+
+.becomeToCreator {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.langChooser {
+    margin-right: 20px;
+}
+
+.becomeToCreator {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #eaeaea;
+    padding: 10px 20px;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+}
+
+.becomeToCreator:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+    border-color: #c1c1c1;
+}
+

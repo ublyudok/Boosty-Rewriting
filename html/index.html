@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <link rel="stylesheet" href="../css/cover_content.css">
+    <link rel="stylesheet" href="../css/card_block.css">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/boosty_favicon.jpg">
+    <link  href="../images/boosty.png">
+    <title>Boosty</title>
+</head>
+<body onclick="">
+<header class="header">
+    <div class="topmenu">
+        <div class="topMenu_left menu_top">
+            <img src="../images/boosty.png" alt="">
+            <button type="button" class="message_top_btn font_600">
+                <a href="#" class="mess_link"><div class="messIcon"></div> MESSAGES</a>
+            </button>
+        </div>
+        <div class="langChooser cursor" id="langChooser">
+            <div class="langValue" id="langValue">
+                <img src="../images/globus.png">
+                <span id="language">EN</span>
+            </div>
+            <img src="../images/gray_arrow.png" id="arrow_img" class="arrow_icon">
+            <div class="langs lang_none" id="langs">
+                <div class="lang_grid">
+                    <div class="ru lan" id="ru">
+                        <img src="../images/russianFlug.png">
+                        RU
+                    </div>
+                    <div class="en lan" id="en">
+                        <img src="../images/usaFlug.png">
+                        EN
+                    </div>
+                </div>
+            </div>
+        </div> <button type="button" class="becomeToCreator" id="becomeToCreator">
+            BECOME TO CREATOR
+        </button>
+        <div class="topMenu_right menu_top">
+            <button type="button" class="profile_btn" id="profile_btn">
+                <div class="avatar-profile" style="background-image: url(../images/boy.jpeg);"></div>
+                <div class="mini-profile-name">
+                    <span class="font_600">name</span>
+                </div>
+                <div class="arrow_profile">
+                    <img src="../images/gray_arrow.png" id="arrow_profile">
+                </div>
+                <div class="mini_dropdown_menu" id="mini_dropdown_menu">
+                    <div class="dropdown_top_block">
+                        <div class="dropDown_item_feed items cursor">
+                            <span class="spans_drop_down feed_span"><div class="feed_icon_drop_down"></div> Feed</span>
+                        </div>
+                        <div class="drop_down_my_subscribtions items cursor">
+                            <span class="spans_drop_down subs_span"><div class="subs_drop_down_icon"></div>My sbuscribtions</span>
+                        </div>
+                        <div class="dropDown_acc_settings items cursor">
+                            <span class="spans_drop_down settings_span"><div class="drop_down_settings"></div> Account settings</span>
+                        </div>
+                    </div>
+                    <div class="log_out_dropdowm cursor">
+                            <span class="spans_drop_down log_out_span"><div class="log_out_drop_down"></div> Log out</span>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <button type="button" class="signUp btns font_600" id="myBtn">
+            SIGN UP
+        </button>   
+        <button type="button" class="logIn btns font_600">
+            LOG IN 
+        </button>
+    </div>
+</header>
+<div class="lay_out" id="lay_out">
+    <div class="cover_content">
+        <div class="cover_container">
+            <div class="cover_info">
+                    <h1>Dream Cast</h1>
+                    <div class="title_cover">
+                        <span>
+                            Озвучиваем твои любимые аниме :з
+                        </span>
+                        <img src="../images/flag.png" class="cursor" id="flag">
+                        <div class="flag_report cursor" id="reportFlag" onclick="register()">
+                            report
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_content">
+        <div class="content_block">
+            <div class="first_grid">
+                <div class="card_block">
+                    <img src="../images/dream_cast.png">
+                    <div class="blog_folow">
+                        <div class="folowers_count">
+                            546
+                        </div>
+                        <div class="folowers_label">
+                            subscribers
+                        </div>
+                        <button type="button" class="follow" onclick="register()">
+                            <div class="follow_image">
+                                <div class="icon_follow"></div>
+                            </div>
+                            <div class="follow_label">
+                                Follow
+                            </div>
+                        </button>
+                        <button type="button" class="send_message" onclick="register()"> 
+                            <div class="send_message_image">
+                                <div class="icon_send_message"></div>
+                            </div>
+                            <div class="send_message_label">
+                                Send message
+                            </div>
+                        </button>
+                        <button type="button" class="donate" onclick="register()">
+                            <div class="donate_image">
+                                <div class="icon_donate"></div>
+                            </div>
+                            <div class="donate_label">
+                                Sent tip
+                            </div>
+                        </button>
+                        <div class="social_media_follow">
+                            <div class="v_kont">
+                                <a href="#"><img src="../images/telegram.png"></a>
+                            </div>
+                            <div class="v_kont">
+                                <a href="#"><img src="../images/v_kontakte.png"></a>
+                            </div>
+                            <div class="v_kont">
+                                <a href="#"><img src="../images/youtube_social.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="donate_card">
+                    <div class="donate_card_title font_600">
+                            GOALS
+                    </div>
+                    <div class="donate_card_targetItem_subs">
+                        <div class="target_item_common">
+                            <span class="font_600">214 of</span><span class="font_600"> 300</span> paid subscribers
+                        </div>
+                        <div class="progressBar_block">
+                            <div class="progress_bar">
+                                <div class="progress_bar_in"></div>
+                            </div>
+                        </div>
+                        <div class="target_item_coment_desc">
+                            Мы будем ждать тебя CUMрад :з
+                        </div>
+                    </div>
+                    <div class="targetItemMoney">
+                        <div class="target_item_common">
+                            <span class="font_600">25 000 of</span><span class="font_600"> 400 000 ₽</span> paid subscribers
+                        </div>
+                        <div class="progressBar_money_block">
+                            <div class="progress_bar_money">
+                                <div class="progress_bar_money_in"></div>
+                            </div>
+                        </div>
+                        <div class="fewWords">
+                            На улучшение сайта и оборудования для его работоспособности!
+                        </div>
+                        <button type="button" class="font_600" onclick="register()">DONATE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="middle_blocks">
+                <div class="info_block">
+                    <div class="main_title_block">
+                        <div class="card_ittle_of_info">
+                            <h2>
+                                ABOUT THE CREATOR
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="about_creator_content">
+                        🌟 <a href="#">Dream Cast</a> - команда дружных ребят, занимающихся озвучиванием твоих любимых аниме.<br>
+                        🐣 У нас тебя ждет ламповая атмосфера, качественная озвучка, а так же море позитивных эмоций! Запасайся горячим чаем, сладкими печеньками и погрузись в этот волшебный мир вместе с нами!<br>
+                        🔅Полезные ссылки 🔅<br>
+                        🌐 Наш Сайт: <a href="#">dreamerscast.com</a><br>
+                        🎬 YouTube: <a href="#">https://vk.cc/c69xZC</a><br>
+                        ✈️ Telegram: <a href="#">https://t.me/dreamercast</a><br>
+                        🎧 Discord: <a href="#">https://discord.gg/KBRm3DZPgp</a><br>
+                        🎶 TikTok: <a href="#">https://www.tiktok.com/@dreamerscast?</a><br>
+                        ✉️ Почта: <a href="#">partners@dreamerscast.com</a> (Вопросы / Предложения / Реклама / Сотрудничество)<br>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="feed_filter" id="filter_feed">
+                        <div class="tabs">
+                            <div class="tabs_feed" id="feed">
+                                <a href="#" class="feedTabs font_600">FEED</a>
+                            </div>
+                            <div class="tabs_feed" id="media">
+                                <a href="#" class="feedTabs font_600">MEDIA</a>
+                            </div>
+                        </div>
+                        <div class="feed_controls">
+                            <button type="button" class="search"></button>
+                            <button type="button" class="filter" id="filter_btn"></button>
+                        </div>
+                    </div>
+                    <div class="extra_filters" id="extra_filters" style="width: 576px!important;">
+                        <div class="all_selects">
+                            <div class="select_select selects cursor" id="all_posts_id">
+                                <span id="span">All posts</span><div class="arrow"><img src="../images/gray_arrow.png" id="arrow"></div>
+                            </div>
+                            <div class="selects choose_posts_to_show" id="choose_posts_to_show">
+                                <div class="all_posts cursor postes_toChoose" id="AllPosts">All posts</div>
+                                <div class="available_to_me cursor postes_toChoose" id="AvailableToMe">Available to me</div>
+                            </div>
+                            <div class="select_date selects cursor">
+                                <span>All time</span></span><div class="arrow"><img src="../images/gray_arrow.png" id="arrow"></div>
+                            </div>
+                            <div class="select_tags selects cursor">
+                                <span>All tags</span></span><div class="arrow"><img src="../images/gray_arrow.png" id="arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="reset_filters" id="reset_filters">
+                        Reset filters
+                    </button>
+                </div>
+                <div class="posts">
+                    <div class="posts_header">
+                        <div class="date">
+                            Feb 23 20:00
+                        </div>
+                        <div class="post_buttons">
+                            <div class="extra_actions">
+                                <div class="report" id="report">
+                                    <button type="button" id="report" onclick="register()">report</button>
+                                </div>
+                                <img src="../images/lock.png" class="lock">
+                                <div class="dots cursor" id="dots_btn"></div>
+                            </div>
+                        </div>
+                        <div class="needs_sub_level">
+                            <div class="needs_sub_lvl_ul">
+                                <span>To unlock you need to subscribe to one of the levels:</span>
+                                <ul>
+                                    <li>♂Fucking slave♂</li>
+                                    <li>♂Smart Ass♂</li>
+                                    <li>♂Boy next door♂</li>
+                                    <li>♂Performance artist♂</li>
+                                    <li>♂Dungeon master♂</li>
+                                    <li>♂Boss of this GYM♂</li>
+                                    <li>♂Full master♂</li>
+                                    <li>♂God of slaves♂</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts_body_image">
+                        <div class="post_subxcription">
+                            <div class="title_of_post">
+                                Helluva Boss | Адский Босс - 2 серия
+                            </div>
+                        </div>
+                        <div class="postBlock_foot">
+                            <div class="post_footer">
+                                Level required:
+                            </div>
+                            <div class="post_footer_i">
+                                ♂Fucking slave♂
+                            </div>
+                            <button type="button" class="font_600" onclick="register()"> <img src="../images/unlock.png"> SUBSCRIBE</button>
+                        </div>
+                    </div>
+                    <div class="post_tags">
+                        <div class="post_tag">
+                            <span class="post_tag_title">Адский Босс</span>
+                        </div>
+                    </div>
+                    <div class="post_footer_block">
+                        <div class="post_footer_container">
+                            <div class="post_footer_leftBlock">
+                                <a href="#"><div class="message_send"></div></a>
+                                <div class="send_tip cursor"></div>
+                            </div>
+                            <div class="share_it cursor"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="available_posts">
+                    <div class="posts_header">
+                        <div class="date">
+                            Feb 23 20:00
+                        </div>
+                        <div class="post_buttons">
+                            <div class="extra_actions">
+                                <div class="report" id="report">
+                                    <button type="button" id="report" onclick="register()">report</button>
+                                </div>
+                                <div class="lock" id="lock"></div>
+                                <div class="dots cursor" id="dots_btn"></div>
+                            </div>
+                        </div>
+                        <div class="needs_sub_level">
+                            <div class="needs_sub_lvl_ul">
+                                <span>To unlock you need to subscribe to one of the levels:</span>
+                                <ul>
+                                    <li>♂Fucking slave♂</li>
+                                    <li>♂Smart Ass♂</li>
+                                    <li>♂Boy next door♂</li>
+                                    <li>♂Performance artist♂</li>
+                                    <li>♂Dungeon master♂</li>
+                                    <li>♂Boss of this GYM♂</li>
+                                    <li>♂Full master♂</li>
+                                    <li>♂God of slaves♂</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_available_title font_600">
+                        Helluva Boss | Адский Босс - пилот
+                    </div>
+                    <div class="post_content_available">
+                        <video
+                        id="my-video"
+                        class="video-js"
+                        controls
+                        preload="auto"
+                        width="575"
+                        height="323"
+                        poster="../images/hell-boss.jpg"
+                        data-setup="{}"
+                      >
+                      <source src="../vidios/some_vidio.mp4" type="video/webm" />
+                      </video>
+                    </div>
+                    <div class="post_tags">
+                        <div class="post_tag">
+                            <span class="post_tag_title">Адский Босс</span>
+                        </div>
+                    </div>
+                    <div class="post_footer_block">
+                        <div class="post_footer_container">
+                            <div class="post_footer_leftBlock">
+                                <a href="#"><div class="message_send"></div></a>
+                                <div class="send_tip cursor"></div>
+                            </div>
+                            <div class="share_it cursor"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_level">
+                <div class="sub_lvl_title">
+                    <div class="sub_lvl_title_block">
+                        <h2>SUBSCRIPTION LEVEL</h2>
+                        <div class="gift cursor"></div>
+                    </div>
+                </div>
+                <div class="sub_lvl_cont">
+                    <div class="sub_lvl_body">
+                        <div class="sub_lvl_body_content">
+                            <div class="sub_lvl_body_title"><h3>♂Fucking slave♂</h3></div>
+                            <div class="sub_lvl_body_price">300 ₽ per month</div>
+                            <div class="sub_lvl_body_image"></div>
+                            <div class="sub_lvl_body_coment">Fisting is...</div>
+                        </div>
+                        <button type="button" class="cursor font_600" onclick="register()">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="close"></div>
+            <div class="modalHeader">
+                <h2>Registration</h1>
+                <h4>Enter your email and password</h2>
+            </div>
+            <div class="modalBody">
+                <form action="" method="POST">
+                    <input type="email" placeholder="email" name="email">
+                    <input type="password" placeholder="password" name="password" id="pass">
+                    <button type="submit">SEND FORM</button>
+                </form>
+            </div>
+            <div class="modalFooter">
+                <h4>or log in using one of the social networks</h2>
+                <div class="authorizateBySocialMedia">
+                    <div class="socialMedia">
+                        <div class="google cursor">
+                            <img src="../images/google.png">
+                        </div>
+                    </div>
+                    <div class="socialMedia">
+                        <div class="odnoklassniki cursor">
+                            <img src="../images/odnoklassniki.png">
+                        </div>
+                    </div>
+                    <div class="socialMedia">
+                        <div class="youtube cursor">
+                            <img src="../images/youtube.png">
+                        </div>
+                    </div>
+                    <div class="socialMedia">
+                        <div class="mailRu cursor">
+                            <img src="../images/mail.png">
+                        </div>
+                    </div>
+                    <div class="socialMedia">
+                        <div class="vk cursor">
+                            <img src="../images/vk.png">
+                        </div>
+                    </div>
+                    <div class="socialMedia">
+                        <div class="twitch cursor">
+                            <img src="../images/twitch.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="offer">
+                    <p>
+                        By registering on the site, you accept terms of service, payment terms, privacy policy and cookie policy
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../js/Profile.js"></script>
+<script src="../js/filter.js"></script>
+<script src="../js/languageChooser.js"></script>
+<script src="../js/registerWindow.js"></script>
+<script src="../js/report.js"></script>
+<script src="../js/posts.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+</body>
+</html>

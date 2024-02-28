@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box!important;
+}
+
+body {
+    background-color: #eee!important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+::selection {
+    background: #F2D6BF;
+    color: black;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #F2D6BF;
+    color: #EEE;
+    text-shadow: none;
+}
+
+.font_600 {
+    font-weight: 600;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}

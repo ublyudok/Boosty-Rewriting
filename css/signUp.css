@@ -1,0 +1,222 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    padding: 20px;
+    position: relative;
+    width: 400px!important;
+    height: 520px!important;
+    margin: auto;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {
+        top:-300px; 
+        opacity:0
+    } 
+
+    to {
+        top:0;
+        opacity:1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top:-300px;
+        opacity:0
+    }
+
+    to {
+        top:0;
+        opacity:1
+    }
+}
+
+.modalHeader {
+    display: grid;
+    text-align: center;
+}
+
+.modalHeader h2 {
+    padding: 0;
+    margin: 0 20px 15px 0;
+    width: auto;
+    font-size: 20px;
+}
+
+.modalHeader h4 {
+    padding: 0 0 15px;
+    margin: 0 21px;
+    font-size: 14px;
+    color: #7c7c7c;
+}
+
+form {
+    display: grid;
+    
+}
+
+form #pass {
+    margin-top: 18px;
+}
+
+form input {
+    height: 45.6px;
+    border-radius: 10px;
+    border: 0.5px solid;
+    border-color: #eaeaea;
+    padding: 11px 15px;
+}
+
+form input:focus {
+    border: 0.5px solid #f15f2c;
+    outline: 0;
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: #f15f2c;
+    border-radius: 10px;
+    height: 40px;
+    font-weight: 600;
+}
+
+form button:hover {
+    background-color: #ce5123;
+    transition: 0.3s;
+}
+
+.modalBody {
+    display: grid;
+    padding: 0 20px;
+    margin: 0 0 29px;
+    width: 360px;
+    height: 138.6px;
+}
+
+.modalFooter h4 {
+    margin: 0 21px;
+    padding: 0 0 15px;
+    font-size: 14px;
+    color: #7c7c7c;
+    text-align: center;
+}
+
+.authorizateBySocialMedia {
+    height: 151px;
+    width: 360px;
+    padding: 0 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.google {
+    width: 60px!important;
+    height: 60px!important;
+    background-color: white;
+    border: 0.5px solid rgb(218, 214, 214);
+    text-align: center;
+    border-radius: 20px;
+    padding: auto;
+}
+
+.google img {
+    width: 26px;
+    height: 26px;
+    margin-top: 17px;
+}
+
+.odnoklassniki {
+    width: 60px!important;
+    height: 60px!important;
+    background-color: white;
+    border: 0.5px solid rgb(218, 214, 214);
+    text-align: center;
+    border-radius: 20px;
+    padding: auto;
+}
+
+.odnoklassniki img {
+    width: 26px;
+    height: 26px;
+    margin-top: 17px;
+}
+
+.socialMedia {
+    background-color: #fff;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.youtube {
+    width: 60px!important;
+    height: 60px!important;
+    background-color: rgb(255,0,0);
+    text-align: center;
+    border-radius: 20px;
+    padding: auto;
+}
+
+.youtube img {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.mailRu img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.vk {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.twitch {
+    width: 60px!important;
+    height: 60px!important;
+    background-color: #9146ff;
+    text-align: center;
+    border-radius: 20px;
+    padding: auto;
+}
+
+.twitch img {
+    width: 26px;
+    height: 26px;
+    margin-top: 19px;  
+}
+
+.offer {
+    color: #7c7c7c;
+    font-size: 11px;
+    margin: 30px 0px 0px;
+    text-align: center;
+}
+
