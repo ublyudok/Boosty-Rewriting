@@ -15,9 +15,8 @@
 
 .modal-content {
     padding: 20px;
-    position: relative;
     width: 400px!important;
-    height: 520px!important;
+    position: relative;
     margin: auto;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
