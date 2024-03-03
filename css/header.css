@@ -369,13 +369,14 @@ header {
 
 
 .alertIcon {
-    width: 20px; 
-    background-image: url(../images/alert.png);
-    background-size: 20px 20px;
-    height: 20px;
+    width: 24px; 
+    background-image: url(../images/alert.svg);
+    background-size: 24px 28px;
+    background-repeat: no-repeat;
+    height: 28px;
 }
 
 .buttonAlert:hover .alertIcon {
     transition: 0.1s;
-    background-image: url(../images/hovered_alert.png);
+    background-image: url(../images/hoveredAlert.svg);
 }

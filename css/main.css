@@ -50,3 +50,7 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-button {
     display: none;
 }
+
+.fixed {
+    position: fixed;
+}

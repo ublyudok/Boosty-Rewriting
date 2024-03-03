@@ -75,6 +75,7 @@
         <div class="settings_wrapper">
             <div class="settings_menu">
                 <a href="#" id="Profile" class="profileClass"><div class="profileIcon IconsForSettings"></div> Profile</a>
+                <a href="#" id="Privacy" class="privacyClass"><div class="privacyIcon IconsForSettings"></div> Privacy</a>
                 <a href="#" id="SocialNetWork" class="SocialClass"><div class="socialIcon IconsForSettings"></div> My social newworks</a>
                 <a href="#" id="Subscribstions" class="SubClass"><div class="subIcon IconsForSettings"></div> Subscribstions</a>
                 <a href="#" id="Agents" class="AgentsClass"><div class="AgentIcon IconsForSettings"></div> My agents</a>
@@ -120,7 +121,7 @@
                         <div class="PhoneForm_standart">
                             <span class="PhoneNumber_title">Phone number</span>
                             <div class="PhoneSettings_btn">
-                                <button type="button" class="phonebtn"><img src="../images/phone.png" style="height: 18px; width: 20px; margin-right: 6px;"> Add Phone Number</button>
+                                <button type="button" class="phonebtn"><img src="../images/phone.svg" style="height: 18px; width: 20px; margin-right: 6px;"> Add Phone Number</button>
                             </div>
                             <div class="PhoneSettings_describtion"> Will be used to sign in to your account</div>
                         </div>
@@ -180,7 +181,7 @@
                                                 Let your subscribers listen to your podcasts and audio in a convenient format
                                                 <div class="audioTest">
                                                     <button type="button" class="testLinK_btn">
-                                                        <img src="../images/linkIcon.svg"> Test RSS Link
+                                                        <img src="../images/hoveredLink.svg"> Test RSS Link
                                                     </button>
                                                 </div>
                                             </div>
@@ -207,7 +208,7 @@
                             </div>
                         </div>
                         <div class="PhoneForm_standart">
-                            <button type="button" class="deleteAccount_btn">
+                            <button type="button" class="deleteAccount_btn" id="deleteAcc">
                                 Delete account
                             </button>
                         </div>
@@ -217,8 +218,45 @@
         </div>
     </div>
     <div class="footer_block">
-        
+        <div class="footerSides">
+            <div class="leftFooter_side">
+                © 2024 CEBC B.V. All rights reserved. All trademarks are the property of their respective owners.
+            </div>
+            <div class="rightFooter_side">
+                <a href="#" class="footerLinks"> Our blog</a>
+                <a href="#" class="footerLinks"> Terms of service</a>
+                <a href="#"> Privacy policy</a>
+                <a href="#"> Brand</a>
+                <a href="#"> Support</a>
+            </div>
+        </div>
     </div>
+
+
+    <div id="modalDeleteAcc" class="modalDeleteAcc">
+        <div class="modalAccDelete">
+            <div class="test">
+                <span class="spanCross" id="cross"><img src="../images/crossSvg.svg" style="width: 25px; height: 25px;"></span>
+                <h2 class="deleteAccTitle">Are you sure you want to delete your profile?</h2>
+                    <div class="deleteAcc_description">
+                        <div class="desc_text">
+                            Confirm the deletion of the profile. You will lose all your data and access to content.
+                        </div>
+                        <div class="checkBoxToDeleteAcc">
+                            <div class="cheackboxDel">
+                                <input type="checkbox" class="checkboxDel" id="checkboxDel"> <div class="cheackBox_text"> Yes, I want to delete my profile</div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="confirm_btns">
+                         <button type="button" id="deleteBtn" class="disabled_btn" disabled>DELETE</button>
+                         <button type="button" class="cancel" id="cancel">CANCEL</button>
+                     </div>
+            </div>
+        </div> 
+    </div>
+
+<script src="../js/accDelete.js"></script>
 <script src="../js/languageChooser.js"></script>
 <script src="../js/Profile.js"></script>
 </body>
