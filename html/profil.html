@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/profile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" type="image/x-icon" href="../images/boosty_favicon.jpg">
     <title>Document</title>
 </head>
-<body>
-    <header class="header" style="position: fixed; border-radius: 0.5p;">
+<body style="background-color: #fff!important;">
+    <header class="header" style="border-bottom: 0.5px solid #eaeaea;">
         <div class="topmenu">
             <div class="topMenu_left menu_top">
-                <img src="../images/boosty.png" alt="">
+                <a href="../html/index.html"><img src="../images/boosty.png" alt=""></a>
                 <button type="button" class="message_top_btn font_600">
                     <a href="#" class="mess_link"><div class="messIcon"></div> MESSAGES</a>
                 </button>
@@ -37,6 +39,9 @@
                     </div>
                 </div>
             </div> 
+            <button type="button" class="buttonAlert">
+                <div class="alertIcon"></div>
+            </button>
             <div class="topMenu_right menu_top">
                 <button type="button" class="profile_btn" id="profile_btn">
                     <div class="avatar-profile" style="background-image: url(../images/boy.jpeg);"></div>
@@ -66,7 +71,154 @@
             </div>
         </div>
     </header>
-
+    <div class="mainContentblock">
+        <div class="settings_wrapper">
+            <div class="settings_menu">
+                <a href="#" id="Profile" class="profileClass"><div class="profileIcon IconsForSettings"></div> Profile</a>
+                <a href="#" id="SocialNetWork" class="SocialClass"><div class="socialIcon IconsForSettings"></div> My social newworks</a>
+                <a href="#" id="Subscribstions" class="SubClass"><div class="subIcon IconsForSettings"></div> Subscribstions</a>
+                <a href="#" id="Agents" class="AgentsClass"><div class="AgentIcon IconsForSettings"></div> My agents</a>
+                <a href="#" id="Notifications" class="NotificationsClass"><div class="NotificationIcon IconsForSettings"></div> Notifications</a>
+                <a href="#" id="Apps" class="AppsClass"><div class="AppsIcon IconsForSettings"></div> Connected Apps</a>
+                <a href="#" id="sessions" class="SessionsClass"><div class="SessionIcon IconsForSettings"></div> Active sessions</a>
+                <a href="#" id="Stream" class="StreamClass"><div class="StreamIcon IconsForSettings"></div> Stream moderations</a>
+                <a href="#" id="Blacklist" class="BlacklistClass"><div class="BlacklistIcon IconsForSettings"></div> Blacklist</a>
+            </div>
+            <form action="" method="POST" class="formSettings">
+                <div class="profileContentcontainer">
+                    <h2>Profile</h2>
+                    <div class="avatar_block_settings">
+                        <div class="avatar_blockTitle">
+                            Profile picture
+                        </div>
+                        <div class="avatarSettings">
+                            <img src="../images/Tvu-6YIiOb0.jpg" style="width: 225px; height: 280px; border-radius: 4px;">
+                            <div class="addImage_content">
+                                <div class="inputFIleAvatar">
+                                    <label for="avatar" class="avatarInput">
+                                        <input type="file" id="avatar">
+                                        <div class="fileIcon"></div>
+                                        <span class="fileTxt"> SELECT A FILE </span>
+                                    <label>
+                                </div>
+                                <div class="avatarDecription">
+                                    PNG, JPG 225x280 no more than 10 Mb.
+                                </div>
+                            </div>
+                        </div>
+                       <div class="PhoneForm_standart">
+                        <div class="inputController_name">
+                            <label class="nameInput_title">Name</label>
+                            <div class="inputName">
+                                <input type="text" name="name" placeholder="Your name" value="name">
+                            </div>
+                            <div class="inputName_describtion">
+                                <span>The name will be displayed on your page</span>
+                            </div>
+                        </div>
+                       </div>
+                        <div class="PhoneForm_standart">
+                            <span class="PhoneNumber_title">Phone number</span>
+                            <div class="PhoneSettings_btn">
+                                <button type="button" class="phonebtn"><img src="../images/phone.png" style="height: 18px; width: 20px; margin-right: 6px;"> Add Phone Number</button>
+                            </div>
+                            <div class="PhoneSettings_describtion"> Will be used to sign in to your account</div>
+                        </div>
+                        <div class="PhoneForm_standart">
+                            <label class="email_label">Email</label>
+                            <div class="InputContainer">
+                                <input type="text" id="emailInput" disabled="disabled" placeholder="Your emal" value="your.email@gmail.com" class="emailInput">
+                                <div class="rightElem">
+                                    <button type="button" class="editBtn" id="editBtn">
+                                        EDIT
+                                    </button>
+                                </div>
+                                <div class="inputName_describtion">
+                                    <span>Required to receive notification, cannot be used to sign in</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="PhoneForm_standart">
+                            <div class="SettingsEdit_title">Biling information</div>
+                            <div class="paymentAdd_block">
+                                <div class="paymentAdd_describtion">
+                                    No payment method added
+                                </div>
+                                <a class="payment_link">Add a blank card</a>
+                            </div>
+                        </div>
+                        <div class="formSetting_toggle">
+                            <div class="SttingEditTogler_btn">
+                                <label class="toggleSwitch_label cursor" onclick="toggledSwitch()">
+                                    <div class="toggle_sitched_checkbox" id="switchContainer">
+                                        <div class="switch_checkbox"></div>
+                                    </div>
+                                    <span class="switchSpan"> My blog contains adult content</span>
+                                </label>
+                                <div class="queBlock">
+                                    <span class="dropdownQuestion_block"></span>
+                                        <div class="dropdownBlock">
+                                            <div class="dropdown_text">
+                                                Make sure that the content posted on Boosty complies with the user agreement in <a href="#" class="paragraphLink" target="_blank"> paragraph 5.4</a>, and check this box if it should be accessible only to people over 18 years old
+                                            </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formSetting_toggle">
+                            <div class="SttingEditTogler_btn">
+                                <label class="toggleSwitch_label cursor" onclick="audioSwitcher()">
+                                    <div class="toggle_sitched_checkbox" id="audioContainer">
+                                        <div class="switch_checkbox"></div>
+                                    </div>
+                                    <span class="switchSpan"> Audio RSS Feed</span>
+                                </label>
+                                <div class="queBlock">
+                                    <span class="dropdownQuestion_block"></span>
+                                        <div class="dropdownBlock">
+                                            <div class="dropdown_text">
+                                                Let your subscribers listen to your podcasts and audio in a convenient format
+                                                <div class="audioTest">
+                                                    <button type="button" class="testLinK_btn">
+                                                        <img src="../images/linkIcon.svg"> Test RSS Link
+                                                    </button>
+                                                </div>
+                                            </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formSetting_toggle">
+                            <div class="SttingEditTogler_btn">
+                                <label class="toggleSwitch_label cursor" onclick="ShowPost()">
+                                    <div class="toggle_sitched_checkbox" id="ShowPost">
+                                        <div class="switch_checkbox"></div>
+                                    </div>
+                                    <span class="switchSpan"> Show the amount of tips under the post</span>
+                                </label>
+                                <div class="queBlock">
+                                    <span class="dropdownQuestion_block"></span>
+                                        <div class="dropdownBlock">
+                                            <div class="dropdown_text">
+                                                Disable this setting if you want to hide the amount you have been donated in posts
+                                            </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="PhoneForm_standart">
+                            <button type="button" class="deleteAccount_btn">
+                                Delete account
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer_block">
+        
+    </div>
 <script src="../js/languageChooser.js"></script>
 <script src="../js/Profile.js"></script>
 </body>

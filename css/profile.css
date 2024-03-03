@@ -1,0 +1,558 @@
+.mainContentblock {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 1140px;
+}
+
+.settings_wrapper {
+    display: flex;
+    padding-top: 20px;
+}
+
+.profileContentcontainer{
+    flex-grow: 1;
+    min-height: 100%;
+    padding: 0 0 35px;
+}
+
+.settings_menu {
+    margin-right: 30px;
+    width: 270px;
+}
+
+.settings_menu a {
+    align-items: center;
+    border-bottom: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 16px;
+    transition: color .2s;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.profileContentcontainer h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.avatar_block_settings {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar_blockTitle {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.avatarSettings {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.avatarInput {
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    max-width: 172px;
+    padding: 10px 14px;
+    border: 0.5px solid #eaeaea;
+    width: 100%;
+}
+
+.avatarInput input {
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: .1px;
+    z-index: -1;
+}
+
+.fileTxt {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.avatarDecription {
+    word-wrap: break-word;
+    color: #7c7c7c;
+    font-size: 13px;
+    margin-top: 10px;
+    word-break: break-word;
+}
+
+.fileIcon {
+    width: 22px;
+    height: 24px;
+    background-image: url(../images/fileIcon.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 22px 24px;
+    margin-right: 12px;
+}
+
+.addImage_content {
+    margin-left: 20px;
+}
+
+.avatarInput:hover {
+    border-color: #f15f2c;
+    transition: 0.3s;
+}
+
+.profileIcon {
+    background-image: url(../images/profileIcon.png);
+}
+
+.profileClass:hover .profileIcon {
+    background-image: url(../images/hovered_profile.png);
+    transition: 0.3s;
+}
+
+.profileClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.IconsForSettings {
+    background-size: 19px 19px;
+    width: 19px;
+    height: 19px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+}
+
+.socialIcon {
+    background-image: url(../images/socialMedia.png);
+}
+
+.SocialClass:hover .socialIcon {
+    background-image: url(../images/hovered_social.png);
+    transition: 0.3s;
+}
+
+.SocialClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.subIcon {
+    background-image: url(../images/drop_down_users.png);
+}
+
+.SubClass:hover .subIcon {
+    background-image: url(../images/hovered_drop_down_users.png);
+    transition: 0.3s;
+}
+
+.SubClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.AgentIcon {
+    background-image: url(../images/police.png)
+}
+
+.AgentsClass:hover .AgentIcon {
+    background-image: url(../images/hovered_police.png);
+    transition: 0.3s;
+}
+
+.AgentsClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.NotificationIcon {
+    background-image: url(../images/alert.png);
+}
+
+.NotificationsClass:hover .NotificationIcon {
+    background-image: url(../images/hovered_alert.png);
+    transition: 0.3s;
+}
+
+.NotificationsClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.AppsIcon {
+    background-image: url(../images/apps.png);
+}
+
+.AppsClass:hover .AppsIcon {
+    background-image: url(../images/hovered_apps.png);
+    transition: 0.3s;
+}
+
+.AgentsClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.SessionIcon {
+    background-image: url(../images/lapTop.png);
+}
+
+.SessionsClass:hover .SessionIcon {
+    background-image: url(../images/hovered_lapTop.png);
+    transition: 0.3s;
+}
+
+.SessionsClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.StreamIcon {
+    background-image: url(../images/security.png);
+}
+
+.StreamClass:hover .StreamIcon {
+    background-image: url(../images/hovered_security.png);
+    transition: 0.3s;
+}
+
+.StreamClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.BlacklistIcon {
+    background-image: url(../images/block.png);
+}
+
+.BlacklistClass:hover .BlacklistIcon {
+    background-image: url(../images/hovered_block.png);
+    transition: 0.3s;
+}
+
+.BlacklistClass:hover {
+    color: #f15f2c;
+    transition: 0.3s;
+}
+
+.formSettings {
+    margin-right: 40px;
+    max-width: 570px;
+}
+
+.inputController_name {
+    position: relative;
+}
+
+.inputName input {
+    border-radius: 8px;
+    font-size: 14px;
+    font-variant-ligatures: common-ligatures;
+    line-height: 22px;
+    outline: none;
+    padding: 11px 15px;
+    width: 100%;
+    border: 1px solid #eaeaea;
+}
+
+.inputName input:hover {    
+    transition: 0.1s;
+    border-color: #c1c1c1;
+}
+
+.inputName input:focus {
+    border-color: #f15f2c;
+}
+
+.inputName_describtion {
+    color: #7c7c7c;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.nameInput_title {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.PhoneForm_standart {
+    margin-bottom: 36px;
+}
+
+.PhoneNumber_title {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.PhoneSettings_btn {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 24px;
+    position: relative;
+}
+
+.PhoneSettings_btn button {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: flex-start;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: #f15f2c;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+    transition: border-color .2s;
+}
+
+.PhoneSettings_btn:hover .phonebtn{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.PhoneSettings_describtion {
+    color: #7c7c7c;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.email_label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.InputContainer {
+    position: relative;
+    width: 100%;
+}
+
+.emailInput {
+    appearance: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-variant-ligatures: common-ligatures;
+    line-height: 22px;
+    outline: none;
+    padding: 11px 15px;
+    width: 100%;
+    border: 1px solid #eaeaea;
+}
+
+.rightElem {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    right: 15px;
+}
+
+.editBtn {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: #f15f2c;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.SettingsEdit_title {
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.paymentAdd_block {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.paymentAdd_describtion {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.payment_link {
+    align-items: center;
+    display: inline-flex;
+    font-size: 14px;
+    border-bottom: 1px solid transparent;
+    color: #f15f2c;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.payment_link:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.formSetting_toggle {
+    margin-bottom: 20px;
+}
+
+.SttingEditTogler_btn {
+    display: flex;
+    gap: 10px;
+}
+
+.toggle_sitched_checkbox {
+    height: 24px;
+    padding: 3px;
+    width: 40px;
+    background-color: #9d9d9d;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    transition: all .3s;
+}
+
+.toggleSwitch_label {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.switch_checkbox {
+    border-radius: 50%;
+    height: 18px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.5);
+    width: 18px;
+}
+
+.switch_active {
+    background-color: #f15f2c;
+    justify-content: flex-end;
+}
+
+.switchSpan {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.dropdownQuestion_block {
+    height: 22px;
+    width: 22px;
+    margin: 0 0 0 8px;
+    border-bottom: 10px solid transparent;
+    box-sizing: content-box;
+    display: inline-block;
+    line-height: 13px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    background-image: url(../images/question.svg);
+    background-size: 22px 22px;
+}
+
+.dropdownBlock {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
+    display: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    max-width: 500px;
+    margin: 2px 0 0 0;
+    min-width: 350px;
+    padding: 10px 10px 10px 12px;
+    position: absolute;
+    z-index: 101;
+    background-color: #fff;
+}
+
+.dropdown_text {
+    color: #7c7c7c;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.queBlock:hover .dropdownBlock {
+    display: block;
+}
+
+.paragraphLink {
+    color: #f15f2c;
+    text-decoration: none;
+}
+
+.paragraphLink:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.testLinK_btn {
+    color: #f15f2c;
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.testLinK_btn img {
+    width: 28px;
+    height: 26px;
+}
+
+.testLinK_btn:hover {
+    border-bottom: 0.1px solid #f15f2c;
+    transition: 0.1;
+}
+
+.deleteAccount_btn {
+    color: #cd3544;
+    border: none;
+    background-color: #fff;
+}
+
+.footer_block {
+    min-width: 1140px;
+    z-index: 96;
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-top: auto;
+}

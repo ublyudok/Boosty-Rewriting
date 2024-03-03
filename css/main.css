@@ -35,3 +35,18 @@ ul {
 *, :after, :before {
     box-sizing: border-box;
 }
+
+html::-webkit-scrollbar {
+    background-color: #fff0;
+    border-radius: 8px;
+    height: 6px;
+    width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #fff0;
+}
+
+html::-webkit-scrollbar-button {
+    display: none;
+}
